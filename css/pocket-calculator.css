@@ -1,7 +1,25 @@
-thead {
+th {
   text-align: right;
+  background: white;
 }
 
 table, th, td {
-    border: 1px solid black;
+  border: 1px solid black;
+  text-align: left;
+  background-color: white;
+  font-size: 24px;
+}
+
+table {
+  */put something to center the stuff in the table
+}
+
+body {
+  background-color: black;
+  padding: 50px
+}
+
+.header {
+  color: white;
+  text-align: center;
 }
