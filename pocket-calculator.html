@@ -26,10 +26,16 @@
         </thead>
         <tbody>
           <tr>
-            <td><button onclick="clear();">AC</td>
-            <td><button onclick="signPlusMinus;">+/-</td>
-            <td><button onclick="signPercent();">%</button></td>
-            <td><button onclick="signDivide();">/</button></td>
+            <td>
+            <input id = "button" type = "button" name = "allClear" value = "AC" onclick = "clear()">
+            <input id = "button" type = "button" name = "negation" value = "+/-" onclick = "signNegation()">
+            <input id = "button" type = "button" name = "percent" value = "%" onclick = "signPercent()">
+            <input id = "button" type = "button" name = "divide" value = "/" onclick = "signDivide()">
+            td><button onclick="clear();">AC</td>
+            td><button onclick="signPlusMinus;">+/-</td>
+            td><button onclick="signPercent();">%</button></td>
+            td><button onclick="signDivide();">/</button></td>
+        </td>
           </tr>
           <tr>
             <td><button onclick="numSeven();">7</button></td>
