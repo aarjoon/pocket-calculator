@@ -10,10 +10,6 @@ table, th, td {
   font-size: 24px;
 }
 
-table {
-  */put something to center the stuff in the table
-}
-
 body {
   background-color: black;
   padding: 50px
@@ -24,3 +20,64 @@ body {
   text-align: center;
 }
 
+#op_button{
+  cursor: pointer;
+  background: orange;
+  width: 90px;
+  height: 45px;
+}
+
+#buttonCentral{
+  width: 90px;
+  height: 45px;
+}
+
+#buttonSide {
+  background: orange;
+  width: 100px;
+  height: 50px;
+}
+
+#decimal{
+width: 90px;
+height: 45px;
+}
+
+#buttonAC{
+width: 90px;
+height: 45px;
+}
+
+#buttonZero{
+  width: 184px;
+  height: 45px;
+}
+
+#calculatorFrame{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: blue;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+#textview {
+  width: 370px;
+  height: 50px;
+  font-size: 25px;
+  margin: 1px;
+}
+
+#button:hover {
+  background-color: lightblue;
+}
+
+#buttonTop:hover {
+  background-color: lightblue;
+}
+
+#buttonZero:hover {
+  background-color: lightblue;
+}
