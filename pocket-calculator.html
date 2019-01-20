@@ -36,41 +36,41 @@
         <tbody>
           <tr>
             <td>
-            <input id = "buttonTop" type = "button" name = "allClear" value = "AC" onclick = "clear()">
-            <input id = "buttonTop" type = "button" name = "negation" value = "+/-" onclick = "signNegation()">
-            <input id = "buttonTop" type = "button" name = "percent" value = "%" onclick = "signPercent()">
-            <input id = "buttonSide" type = "button" name = "divide" value = "/" onclick = "signDivide()">
+            <input class = "button-top" id = "buttonClear" type = "button" name = "allClear" value = "AC" onclick = "clean();">
+            <input class = "button-top" id = "buttonNegation" type = "button" name = "negation" value = "+/-" onclick = "negation('+/-');">
+            <input class = "button-top" id = "buttonPercent" type = "button" name = "percent" value = "%" onclick = "percentage('%');">
+            <input class = "button-side" id = "buttonDivide" type = "button" name = "divide" value = "/" onclick = "insert('/'); clearOnOp();">
         </td>
           </tr>
           <tr>
             <td>
-            <input id = "buttonCentral" type = "button" name = "numSeven" value = "7" onclick = "numSeven()">
-            <input id = "buttonCentral" type = "button" name = "numEight" value = "8" onclick = "numEight()">
-            <input id = "buttonCentral" type = "button" name = "numNine" value = "9" onclick = "numNine()">
-            <input id = "buttonSide" type = "button" name = "multiply" value = "X" onclick = "signMultiply()">
+            <input class = "button-central" id = "buttonSeven" type = "button" name = "numSeven" value = "7" onclick = "insert(7);">
+            <input class = "button-central" id = "buttonEight" type = "button" name = "numEight" value = "8" onclick = "insert(8);">
+            <input class = "button-central" id = "buttonNine" type = "button" name = "numNine" value = "9" onclick = "insert(9);">
+            <input class = "button-side" id = "buttonMultiply" type = "button" name = "multiply" value = "X" onclick = "insert('*'); clearOnOp();">
             </td>
           </tr>
           <tr>
             <td>
-            <input id = "buttonCentral" type = "button" name = "numFour" value = "4" onclick = "numFour()">
-            <input id = "buttonCentral" type = "button" name = "numFive" value = "5" onclick = "numFive()">
-            <input id = "buttonCentral" type = "button" name = "numSix" value = "6" onclick = "numSix()">
-            <input id = "buttonSide" type = "button" name = "subtract" value = "-" onclick = "signSubtract()">
+            <input class = "button-central" id = "buttonFour" type = "button" name = "numFour" value = "4" onclick = "insert(4);">
+            <input class = "button-central" id = "buttonFive" type = "button" name = "numFive" value = "5" onclick = "insert(5);">
+            <input class = "button-central" id = "buttonSix" type = "button" name = "numSix" value = "6" onclick = "insert(6);">
+            <input class = "button-side" id = "buttonSubtract" type = "button" name = "subtract" value = "-" onclick = "insert('-'); clearOnOp();">
             </td>
           </tr>
           <tr>
             <td>
-            <input id = "buttonCentral" type = "button" name = "numOne" value = "1" onclick = "numOne()">
-            <input id = "buttonCentral" type = "button" name = "numTwo" value = "2" onclick = "numTwo()">
-            <input id = "buttonCentral" type = "button" name = "numThree" value = "3" onclick = "numThree()">
-            <input id = "buttonSide" type = "button" name = "add" value = "+" onclick = "signPlus()">
+            <input class = "button-central" id = "buttonOne" type = "button" name = "numOne" value = "1" onclick = "insert(1);">
+            <input class = "button-central" id = "buttonTwo" type = "button" name = "numTwo" value = "2" onclick = "insert(2);">
+            <input class = "button-central" id = "buttonThree" type = "button" name = "numThree" value = "3" onclick = "insert(3);">
+            <input class = "button-side" id = "buttonPlus" type = "button" name = "add" value = "+" onclick = "insert('+'); clearOnOp();">
             </td>
           </tr>
           <tr>
             <td>
-            <input id = "buttonZero" type = "button" name = "numZero" value = "0" onclick = "numZero()">
-            <input id = "buttonCentral" type = "button" name = "decimal" value = "." onclick = "signDecimal()">
-            <input id = "buttonSide" type = "button" name = "equal" value = "=" onclick = "signEqual()">
+            <input class = "button-zero" id = "buttonZero" type = "button" name = "numZero" value = "0" onclick = "insert('0');">
+            <input class = "button-central" id = "buttonDecimal" type = "button" name = "decimal" value = "." onclick = "decimalInsert('.');">
+            <input class = "button-side" id = "buttonEqual" type = "button" name = "equal" value = "=" onclick = "equal();">
             </td>
           </tr>
         </tbody>

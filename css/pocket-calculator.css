@@ -21,32 +21,32 @@ body {
   text-align: center;
 }
 
-#op_button{
+idk if i will need#op_button{
   cursor: pointer;
   background: orange;
   width: 90px;
   height: 45px;
 }
 
-#buttonCentral{
+.button-central{
   background: white;
   width: 100px;
   height: 50px;
 }
 
-#buttonSide {
+.button-side {
   background: orange;
   width: 100px;
   height: 50px;
 }
 
-#buttonTop {
+.button-top {
   background: lightgray;
   width: 100px;
   height: 50px;
 }
 
-#buttonZero{
+.button-zero{
   background: white;
   width: 205px;
   height: 50px;
@@ -69,19 +69,19 @@ body {
   margin: 1px;
 }
 
-#buttonCentral:hover {
+.button-central:hover {
   background-color: lightgray;
 }
 
-#buttonTop:hover {
+.button-top:hover {
   background-color: darkgray;
 }
 
-#buttonZero:hover {
+.button-zero:hover {
   background-color: lightgray;
 }
 
-#buttonSide:hover {
+.button-side:hover {
   background-color: darkorange;
 }
 
