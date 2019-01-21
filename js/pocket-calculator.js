@@ -52,7 +52,7 @@ document.calculator.display.value = commaInput;
   }
 }
 
-function clean(){
+function clean() {
   lastSym = false;
   operationInsert = false;
  document.calculator.display.value = 0;
@@ -94,7 +94,7 @@ function clearOnOp() {
  document.getElementById("buttonNine").disabled = false;
 }
 
-function equal(){
+function equal() {
  piStatus = false;
  symbolStatus = false;
  lastSym = true;
@@ -114,21 +114,21 @@ function equal(){
  if (calcAnswer > 999999999) {
    document.calculator.display.value = calcAnswer.toExponential(9);
  } else {
-   document.calculator.display.value=calcAnswer.toLocaleString("en");
+   document.calculator.display.value = calcAnswer.toLocaleString("en");
  }
 
- if(document.calculator.display.value === "Infinity" || document.calculator.display.value === "∞") {
+ if (document.calculator.display.value === "Infinity" || document.calculator.display.value === "∞") {
    document.calculator.display.value = "Error";
  }
 }
 
-function negation(){
+function negation() {
   document.calculator.display.value = document.calculator.display.value.split(",").join("");
   document.calculator.display.value = document.calculator.display.value * -1;
    document.calculator.display.value = Number(document.calculator.display.value.split(",").join("")).toLocaleString();
    expressionArray[expressionArray.length - expressionArray.length] = expressionArray[expressionArray.length - expressionArray.length] * -1;
    console.log(expressionArray);
-   if(document.calculator.display.value === "NaN"){
+   if (document.calculator.display.value === "NaN") {
      document.calculator.display.value = "Error";
    }
    decimalInserted = true;
@@ -136,7 +136,7 @@ function negation(){
   document.getElementById("buttonDecimal").disabled = true;
 }
 
-function percentage(){
+function percentage() {
   document.calculator.display.value = document.calculator.display.value.split(",").join("")
 
   if(firstPercent == false){
@@ -151,7 +151,7 @@ function percentage(){
 expressionArray[removed] = document.calculator.display.value
   console.log(expressionArray)
   firstPercent = true;
-}else{
+} else {
   let numberCount2 = document.calculator.display.value.length
   numberCount2 = numberCount2 - 4
   console.log("numbers2", numberCount2)
@@ -159,7 +159,7 @@ expressionArray[removed] = document.calculator.display.value
 expressionArray.splice(expressionArray.length -1)
   document.calculator.display.value = document.calculator.display.value / 100
   expressionArray[removed2] = document.calculator.display.value
-  if(document.calculator.display.value<= 0.9999999){
+  if(document.calculator.display.value <= 0.9999999){
     let expon= Number(document.calculator.display.value)
     console.log(typeof expon);
     document.calculator.display.value = expon.toExponential(9)
@@ -168,7 +168,6 @@ expressionArray.splice(expressionArray.length -1)
 }
 
 }
-
 
 function decimalInsert(num){
  if(decimalStatus == false){
