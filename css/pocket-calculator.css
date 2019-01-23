@@ -21,13 +21,6 @@ body {
   text-align: center;
 }
 
-idk if i will need#op_button{
-  cursor: pointer;
-  background: orange;
-  width: 90px;
-  height: 45px;
-}
-
 .button-central{
   background: white;
   width: 100px;
@@ -53,10 +46,10 @@ idk if i will need#op_button{
 }
 
 #calculatorFrame{
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-180%);
+  transform: translateX(-50%) translateY(0%);
   background: white;
   padding: 10px;
   border-radius: 1px;
@@ -83,8 +76,4 @@ idk if i will need#op_button{
 
 .button-side:hover {
   background-color: darkorange;
-}
-
-#space {
-  margin-top: 150px;
 }
